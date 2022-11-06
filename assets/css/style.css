@@ -1,9 +1,3 @@
-*{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 :root{
     --background-color: linear-gradient(120deg, #59b4ff, #001cbb);
     --color-checkbox: #000;
@@ -13,13 +7,19 @@
     --color-relogio-div: #fff;
 }
 
-.orange-mode:root{
-    --background-color: linear-gradient(120deg, #f5b326, #a04a04d7);
+.blue-mode:root{
+    --background-color: linear-gradient(120deg, #f8bd3d, #a04a04d7);
     --color-checkbox: #fff;
     --transition: all .5s;
-    --box-shadow-relogio: 0px 8px 10px rgba(255, 255, 255, 0.5);  
+    --background-relogio-div: rgba(5, 5, 5, 0.9);  
     --background-relogio-div: rgba(255, 255, 255, 0.9);
     --color-relogio-div: #2e2e2e;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body{
