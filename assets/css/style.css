@@ -4,12 +4,41 @@
     padding: 0;
 }
 
+:root{
+    --background-color: linear-gradient(120deg, #59b4ff, #001cbb);
+    --color-checkbox: #000;
+    --transition: all .5s;
+    --box-shadow-relogio: 0px 8px 10px rgba(0, 0, 0, 0.5);  
+    --background-relogio-div: rgba(5, 5, 5, 0.9);
+    --color-relogio-div: #fff;
+}
+
+.orange-mode:root{
+    --background-color: linear-gradient(120deg, #f5b326, #a04a04d7);
+    --color-checkbox: #fff;
+    --transition: all .5s;
+    --box-shadow-relogio: 0px 8px 10px rgba(255, 255, 255, 0.5);  
+    --background-relogio-div: rgba(255, 255, 255, 0.9);
+    --color-relogio-div: #2e2e2e;
+}
+
 body{
     height: 100vh;
-    background: linear-gradient(120deg, #59b4ff, #001cbb);
+    background: var(--background-color);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: var(--transition);
+}
+
+.checkbox{
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    margin-bottom: 600px;
+    color: var(--color-checkbox);
+    font-weight: bolder;
+    transition: var(--transition);
 }
 
 .relogio{
@@ -20,7 +49,7 @@ body{
     width: 550px;
     background-color: transparent;
     border-radius: 3px;
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);    
+    box-shadow: var(--box-shadow-relogio);    
     transition: all 0.5s;
 }
 .relogio:hover{
@@ -34,10 +63,11 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    background: rgba(5, 5, 5, 0.9);
+    color: var(--color-relogio-div);
+    background: var(--background-relogio-div);
     border-radius: 7px;
     letter-spacing: 3px;
+    transition: var(--transition);
 }
 
 .relogio span{
